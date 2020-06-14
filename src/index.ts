@@ -7,6 +7,7 @@ import {
 } from "@opennetwork/rdf-data-model"
 import * as ns from "./namespace"
 import { literal } from "@opennetwork/rdf-namespace-javascript"
+import { asyncIterable } from "iterable"
 
 export interface TransactionOptions {
     context?: QuadGraphLike
@@ -25,7 +26,7 @@ function getContext(options: TransactionOptions): QuadGraph {
     return context
 }
 
-export async function *transact(options: TransactionOptions, source: (id: QuadSubject) => AsyncIterable<Quad>): AsyncIterable<Quad> {
+export async function *transact(options: TransactionOptions, source: Iterable<Quad> | AsyncIterable<Quad> | ((id: QuadSubject) => AsyncIterable<Quad>)): AsyncIterable<Quad> {
     const context = getContext(options)
     const id = DefaultDataFactory.blankNode()
     yield new Quad(id, ns.type, ns.transaction, context)
@@ -33,7 +34,8 @@ export async function *transact(options: TransactionOptions, source: (id: QuadSu
     if (options.header) {
         yield* options.header(id, context)
     }
-    for await (const quad of source(id)) {
+    const iterable = typeof source === "function" ? source(id) : asyncIterable(source);
+    for await (const quad of iterable) {
         const quadId = DefaultDataFactory.blankNode()
         yield new Quad(id, ns.quad, quadId, context)
         yield new Quad(quadId, ns.type, ns.quad, context)
@@ -63,9 +65,7 @@ export function transaction(options: TransactionOptions): ((input: AsyncIterable
                 ...options,
                 context
             },
-            async function *source() {
-                yield* input
-            }
+            input
         )
     }
 }
