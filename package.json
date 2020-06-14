@@ -1,5 +1,5 @@
 {
-  "name": "@opennetwork/rdf-transform",
+  "name": "@opennetwork/rdf-transaction",
   "version": "1.0.4",
   "main": "./esnext/index.js",
   "types": "./esnext/index.d.ts",
