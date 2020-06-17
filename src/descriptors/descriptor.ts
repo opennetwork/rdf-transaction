@@ -49,8 +49,8 @@ export interface PredicateResolveOptions<O extends (LiteralInput | QuadObject) =
 }
 
 export interface PredicateResolveFn<T extends Type<NamedNode>, N extends string, P extends QuadPredicate, O extends (LiteralInput | QuadObject) = (LiteralInput | QuadObject)> {
-    (options?: PredicateResolveOptions<O>): AsyncIterable<Quad>
-    (input: O, options?: PredicateResolveOptions<O>): AsyncIterable<Quad>
+    (options?: PredicateResolveOptions<O>): Quad
+    (input: O, options?: PredicateResolveOptions<O>): Quad
 }
 
 export type Predicate<T extends Type<NamedNode>, N extends string, P extends QuadPredicate, O extends (LiteralInput | QuadObject) = (LiteralInput | QuadObject)> = T & {
@@ -133,7 +133,7 @@ export function type<N extends NamedNode, T extends Type<N>>(type: T): TypeFn<N,
                 }
                 return predicateResolve
 
-                function predicateResolve<O>(inputOrOptions?: O | PredicateResolveOptions): AsyncIterable<Quad> {
+                function predicateResolve<O>(inputOrOptions?: O | PredicateResolveOptions): Quad {
                     return predicate(getOptions(inputOrOptions))
 
                     function getOptions(value?: O | PredicateResolveOptions): PredicateResolveOptions {
@@ -197,12 +197,14 @@ export function predicate<O extends (LiteralInput | QuadObject), N extends strin
             ...predicateProto
         }
 
-        async function *predicateResolve(inputOrOptions?: O | PredicateResolveOptions): AsyncIterable<Quad> {
+        function predicateResolve(inputOrOptions?: O | PredicateResolveOptions): Quad {
             const { graph, subject, object } = getOptions(inputOrOptions)
             if (isQuadObject(object)) {
-                return yield new Quad(subject, predicate, object, graph)
+                return new Quad(subject, predicate, object, graph)
             } else if (isLiteralInput(object)) {
-                return yield new Quad(subject, predicate, literal(object), graph)
+                return new Quad(subject, predicate, literal(object), graph)
+            } else {
+                throw new Error("Unknown input")
             }
         }
 

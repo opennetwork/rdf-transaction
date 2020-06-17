@@ -36,30 +36,30 @@ export async function *transact(options: TransactionOptions, source: Quad | Iter
 
     const graph: QuadGraph = getGraph(options)
     const transaction = ds.transaction({ dataset: options.dataset })
-    yield* transaction.type()
+    yield transaction.type()
 
-    yield* transaction.timestamp(new Date())
+    yield transaction.timestamp(new Date())
     if (options.header) {
         yield* options.header(transaction.id, graph)
     }
     const iterable = typeof source === "function" ? source(transaction.id) : isQuad(source) ? asyncIterable([source]) : asyncIterable(source)
     for await (const instance of iterable) {
         const quad = ds.quad({ dataset: options.dataset })
-        yield* quad.type()
-        yield* transaction.quad(quad.id)
-        yield* quad.subject(instance.subject)
-        yield* quad.predicate(instance.predicate)
-        yield* quad.object(instance.object)
+        yield quad.type()
+        yield transaction.quad(quad.id)
+        yield quad.subject(instance.subject)
+        yield quad.predicate(instance.predicate)
+        yield quad.object(instance.object)
         if (isDefaultGraph(instance.graph)) {
             if (isQuadGraph(options.defaultQuadGraph)) {
-                yield* quad.graph(options.defaultQuadGraph)
+                yield quad.graph(options.defaultQuadGraph)
             } else {
-                yield* quad.graph(ns.quadDefaultGraph)
+                yield quad.graph(ns.quadDefaultGraph)
             }
         } else {
-            yield* quad.graph(instance.graph)
+            yield quad.graph(instance.graph)
         }
-        yield* quad.timestamp(new Date())
+        yield quad.timestamp(new Date())
         if (options.quadHeader) {
             yield* options.quadHeader(quad.id, graph, instance)
         }
@@ -67,12 +67,12 @@ export async function *transact(options: TransactionOptions, source: Quad | Iter
         if (options.quadFooter) {
             yield* options.quadFooter(quad.id, graph, instance)
         }
-        yield* quad.completion(new Date())
+        yield quad.completion(new Date())
     }
     if (options.footer) {
         yield* options.footer(transaction.id, graph)
     }
-    yield* transaction.completion(new Date())
+    yield transaction.completion(new Date())
 }
 
 export function transaction(options: TransactionOptions): ((input: AsyncIterable<Quad>) => AsyncIterable<Quad>) {
