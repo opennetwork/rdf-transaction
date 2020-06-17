@@ -14,10 +14,10 @@
   resolved "https://registry.npmjs.org/@opennetwork/rdf-dataset/-/rdf-dataset-8.2.9.tgz#e1eb122a97effa5da79f5b731637b1cc97c28f2f"
   integrity sha512-nlxW40Ei8MXjfh6+bIIdXzub1UksxJdfjTadpYkFo7T9TaVAMa2l234gJ7Ca58WWWFyR2XSwfB774e/xlqfffw==
 
-"@opennetwork/rdf-namespace-javascript@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@opennetwork/rdf-namespace-javascript/-/rdf-namespace-javascript-1.0.2.tgz#6838c11d7560583bbec4d2dcbe6e337a95d30924"
-  integrity sha512-6HIrymaXkTR+chNZO2Y1qB16P/G/TJubLVMqdNQcykS+9SKbJqJi4GXf6dVqPNcnIpS/hAmS2j6l5fcxqsMeqg==
+"@opennetwork/rdf-namespace-javascript@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@opennetwork/rdf-namespace-javascript/-/rdf-namespace-javascript-1.0.4.tgz#4be361240531019b112ddd26f956d947703093c1"
+  integrity sha512-twksyv+ORrQ7k00dzd0fog/13D6ayEbaabY0DB0EkTRxQPPGnMOjaBMrsGT2ap09jmYyaBGtrtFqFYCaUEz8kQ==
 
 "@opennetwork/rdf-namespace-json@^1.0.3":
   version "1.0.3"
@@ -28,6 +28,11 @@
   version "1.0.4"
   resolved "https://registry.npmjs.org/@opennetwork/rdf-namespace-mime/-/rdf-namespace-mime-1.0.4.tgz#48af37dd07fee15541e49d2190a1f0af71fd97b8"
   integrity sha512-FammzqYn0z6hNxXhRgenxVa6cKYk4hKQPeM0dUzqgRYMaU3+GtsjyKSw2zHb1yrLV2PlGUwIsqsXi/lT7zr01g==
+
+"@opennetwork/rdf-transform@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@opennetwork/rdf-transform/-/rdf-transform-1.0.6.tgz#0c42d4573be097d613c5c7521a4f96503aee180f"
+  integrity sha512-MJbbF0l5uSIlH6GaiXJ6hSTJJrj5fGPXRPhc2UH55K7t8xqq5J//uXquWe7ZgeARk2gzuaIOgq0JDab4MEGbaw==
 
 balanced-match@^1.0.0:
   version "1.0.0"

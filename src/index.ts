@@ -1,71 +1,84 @@
 import {
     DefaultDataFactory,
-    isDefaultGraph, isQuadGraph,
-    Quad, QuadGraph,
-    QuadGraphLike, QuadObject,
+    DefaultGraph,
+    isDefaultGraph,
+    isQuad,
+    isQuadGraph,
+    Quad,
+    QuadGraph,
+    QuadObject,
     QuadSubject
 } from "@opennetwork/rdf-data-model"
 import * as ns from "./namespace"
-import { literal } from "@opennetwork/rdf-namespace-javascript"
 import { asyncIterable } from "iterable"
+import * as ds from "./descriptors"
+import {ReadonlyDataset} from "@opennetwork/rdf-dataset";
 
 export interface TransactionOptions {
-    context?: QuadGraphLike
-    quadHeader?: (id: QuadSubject, context: QuadGraph, quad: Quad) => AsyncIterable<Quad> | Iterable<Quad>
-    quadFooter?: (id: QuadSubject, context: QuadGraph, quad: Quad) => AsyncIterable<Quad> | Iterable<Quad>
-    header?: (id: QuadSubject, context: QuadGraph) => AsyncIterable<Quad> | Iterable<Quad>
-    footer?: (id: QuadSubject, context: QuadGraph) => AsyncIterable<Quad> | Iterable<Quad>
-    defaultGraph?: QuadObject
+    dataset?: ReadonlyDataset
+    graph?: QuadGraph
+    quadHeader?: (id: QuadSubject, graph: QuadGraph, quad: Quad) => AsyncIterable<Quad> | Iterable<Quad>
+    quadFooter?: (id: QuadSubject, graph: QuadGraph, quad: Quad) => AsyncIterable<Quad> | Iterable<Quad>
+    header?: (id: QuadSubject, graph: QuadGraph) => AsyncIterable<Quad> | Iterable<Quad>
+    footer?: (id: QuadSubject, graph: QuadGraph) => AsyncIterable<Quad> | Iterable<Quad>
+    defaultQuadGraph?: Exclude<QuadObject, DefaultGraph>
 }
 
-function getContext(options: TransactionOptions): QuadGraph {
-    const context = options.context ? DefaultDataFactory.fromTerm(options.context) : ns.transaction
+function getGraph(options: TransactionOptions): QuadGraph {
+    const context = options.graph ? DefaultDataFactory.fromTerm(options.graph) : ns.transaction
     if (!isQuadGraph(context)) {
         throw new Error("Invalid context")
     }
     return context
 }
 
-export async function *transact(options: TransactionOptions, source: Iterable<Quad> | AsyncIterable<Quad> | ((id: QuadSubject) => AsyncIterable<Quad>)): AsyncIterable<Quad> {
-    const context = getContext(options)
-    const id = DefaultDataFactory.blankNode()
-    yield new Quad(id, ns.type, ns.transaction, context)
-    yield new Quad(id, ns.timestamp, literal(new Date()), context)
+export async function *transact(options: TransactionOptions, source: Quad | Iterable<Quad> | AsyncIterable<Quad> | ((id: QuadSubject) => AsyncIterable<Quad>)): AsyncIterable<Quad> {
+
+    const graph: QuadGraph = getGraph(options)
+    const transaction = ds.transaction({ dataset: options.dataset })
+    yield* transaction.type()
+
+    yield* transaction.timestamp(new Date())
     if (options.header) {
-        yield* options.header(id, context)
+        yield* options.header(transaction.id, graph)
     }
-    const iterable = typeof source === "function" ? source(id) : asyncIterable(source);
-    for await (const quad of iterable) {
-        const quadId = DefaultDataFactory.blankNode()
-        yield new Quad(id, ns.quad, quadId, context)
-        yield new Quad(quadId, ns.type, ns.quad, context)
-        yield new Quad(quadId, ns.quadSubject, quad.subject, context)
-        yield new Quad(quadId, ns.quadPredicate, quad.predicate, context)
-        yield new Quad(quadId, ns.quadObject, quad.object, context)
-        yield new Quad(quadId, ns.quadGraph, isDefaultGraph(quad.graph) ? (options.defaultGraph || ns.quadDefaultGraph) : quad.graph, context)
-        yield new Quad(quadId, ns.timestamp, literal(new Date()), context)
+    const iterable = typeof source === "function" ? source(transaction.id) : isQuad(source) ? asyncIterable([source]) : asyncIterable(source)
+    for await (const instance of iterable) {
+        const quad = ds.quad({ dataset: options.dataset })
+        yield* quad.type()
+        yield* transaction.quad(quad.id)
+        yield* quad.subject(instance.subject)
+        yield* quad.predicate(instance.predicate)
+        yield* quad.object(instance.object)
+        if (isDefaultGraph(instance.graph)) {
+            if (isQuadGraph(options.defaultQuadGraph)) {
+                yield* quad.graph(options.defaultQuadGraph)
+            } else {
+                yield* quad.graph(ns.quadDefaultGraph)
+            }
+        } else {
+            yield* quad.graph(instance.graph)
+        }
+        yield* quad.timestamp(new Date())
         if (options.quadHeader) {
-            yield* options.quadHeader(quadId, context, quad)
+            yield* options.quadHeader(quad.id, graph, instance)
         }
-        yield quad
+        yield instance
         if (options.quadFooter) {
-            yield* options.quadFooter(quadId, context, quad)
+            yield* options.quadFooter(quad.id, graph, instance)
         }
+        yield* quad.completion(new Date())
     }
     if (options.footer) {
-        yield* options.footer(id, context)
+        yield* options.footer(transaction.id, graph)
     }
+    yield* transaction.completion(new Date())
 }
 
 export function transaction(options: TransactionOptions): ((input: AsyncIterable<Quad>) => AsyncIterable<Quad>) {
-    const context = getContext(options)
-    return async function *transaction(input: AsyncIterable<Quad>): AsyncIterable<Quad> {
-        yield* transact(
-            {
-                ...options,
-                context
-            },
-            input
-        )
-    }
+    const graph = getGraph(options)
+    return transact.bind(undefined, {
+        ...options,
+        graph
+    })
 }

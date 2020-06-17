@@ -15,6 +15,7 @@
     "@opennetwork/rdf-dataset": "^8.2.1",
     "@opennetwork/rdf-namespace-json": "^1.0.3",
     "@opennetwork/rdf-namespace-mime": "^1.0.4",
+    "@opennetwork/rdf-transform": "^1.0.6",
     "filehound": "^1.17.4",
     "iterable": "^5.7.0",
     "react": "^16.13.1",
@@ -32,6 +33,6 @@
     "build": "tsc && node scripts/post-build.js"
   },
   "dependencies": {
-    "@opennetwork/rdf-namespace-javascript": "^1.0.2"
+    "@opennetwork/rdf-namespace-javascript": "^1.0.4"
   }
 }

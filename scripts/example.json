@@ -1,0 +1,1280 @@
+[
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.154Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/subject"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "a"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/predicate"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/is"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/object"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-e27feb06-9771-461f-bf5b-5ee0564465c2"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/graph"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/default-graph"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.156Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/is"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-e27feb06-9771-461f-bf5b-5ee0564465c2"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-12740d04-a3fd-43dc-a2b6-b0172303fbdb"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.156Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/subject"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-e27feb06-9771-461f-bf5b-5ee0564465c2"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/predicate"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/object"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type/function"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/graph"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.157Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-e27feb06-9771-461f-bf5b-5ee0564465c2"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type/function"
+    },
+    "graph": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-90a8f3b0-d016-48d6-9f44-1a22a5d5ec21"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.157Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/subject"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-e27feb06-9771-461f-bf5b-5ee0564465c2"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/predicate"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/is"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/object"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/graph"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/default-graph"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.159Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-e27feb06-9771-461f-bf5b-5ee0564465c2"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/is"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-88fa26d6-8005-4fab-82a0-1bf276debb0a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.159Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/subject"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/predicate"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/object"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type/async-iterable"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/graph"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.159Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type/async-iterable"
+    },
+    "graph": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-8e03a1e2-1c5a-4f33-b695-2361f6016d8d"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.159Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/subject"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/predicate"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/is"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/object"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-2d06261e-5d15-48ef-a974-b8b29f6e7d8a"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/graph"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/default-graph"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.160Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/is"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-2d06261e-5d15-48ef-a974-b8b29f6e7d8a"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-1919c350-6a60-40fc-8e77-e1361357c179"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.160Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/subject"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-2d06261e-5d15-48ef-a974-b8b29f6e7d8a"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/predicate"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/object"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type/number"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/graph"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.160Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-2d06261e-5d15-48ef-a974-b8b29f6e7d8a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type/number"
+    },
+    "graph": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/type"
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-346174c7-69d8-43f7-bee2-45fde8f362dc"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.160Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/subject"
+    },
+    "object": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/predicate"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/contains"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/object"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "1",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/graph"
+    },
+    "object": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/quad/default-graph"
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/timestamp"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.160Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-9a74127c-aa6d-4748-ae32-1ddded19ae48"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/aware-consumer/contains"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "1",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-3e378710-1f44-42af-bdf6-11b16eba886a"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.160Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  },
+  {
+    "subject": {
+      "termType": "BlankNode",
+      "value": "blank-92381d8b-8816-4d05-b86d-65ed45c10022"
+    },
+    "predicate": {
+      "termType": "NamedNode",
+      "value": "https://types.open-network.dev/rdf-transaction/transaction/completion"
+    },
+    "object": {
+      "termType": "Literal",
+      "value": "2020-06-17T12:16:51.160Z",
+      "language": "",
+      "datatype": {
+        "termType": "NamedNode",
+        "value": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    },
+    "graph": {
+      "termType": "DefaultGraph",
+      "value": ""
+    }
+  }
+]
